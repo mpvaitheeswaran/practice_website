@@ -152,6 +152,9 @@ a{
     overflow: hidden;
 }
 .img img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
     transition: all .5s ease;
 }
 .staff .img {
@@ -414,6 +417,17 @@ a{
 .footer-input.btn-subscribe:hover{
     background-color: #4cc9f0;
 }
-.social a{
+.social-icon a{
     color: white;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    background-color: #464646;
+    border-radius: 50%;
+}
+.social-icon a i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

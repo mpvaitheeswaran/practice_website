@@ -20,6 +20,7 @@ a{
     font-family: 'Roboto Mono', monospace;
     text-transform: uppercase;
     color: #adb5bd;
+    letter-spacing: 2px;
 }  
 /* Text Colors */
 .text-fifth{
@@ -276,6 +277,98 @@ a{
     width: 100%;
     height: 350px;
 }
+.img-wrapper {
+    position: relative;
+}
+.img-overlay {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    
+  }
+  .img-overlay i {
+    color: #fff;
+    font-size: 3em;
+  }
+#overlay {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    -webkit-user-select: none;
+    -moz-user-select: none;    
+    -ms-user-select: none; 
+    user-select: none; 
+    
+  }
+  #overlay img {
+    margin: 0;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    padding: 5%;
+    @media screen and (min-width:768px) {
+        width: 60%;
+    }
+    @media screen and (min-width:1200px) {
+        width: 50%;
+    }
+  }
+  
+  #nextButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.8s;
+    
+    @media screen and (min-width:768px) {
+      font-size: 3em;
+    }
+  }
+  #nextButton:hover {
+    opacity: 0.7;
+  }
+  
+  #prevButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.8s;
+    
+    @media screen and (min-width:768px) {
+      font-size: 3em;
+    }
+  }
+  #prevButton:hover {
+    opacity: 0.7;
+  }
+  
+  #exitButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.8s;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+    @media screen and (min-width:768px) {
+      font-size: 3em;
+    }
+  }
+  #exitButton:hover {
+    opacity: 0.7;
+  }
 
 /* Footer section */
 .text-footer{

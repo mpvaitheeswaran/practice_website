@@ -1,0 +1,11 @@
+/* banner section */
+.baner{
+    position: relative;
+    background-image: url(/src/images/teacher-kids.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+}
+.baner a{
+    color: white;
+}

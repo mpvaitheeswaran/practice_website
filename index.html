@@ -13,7 +13,6 @@
     <title>Website</title>
 </head>
 <body>
-    <header>
         <div class="header bg-info p-2 text-light text-center">
             <div class="row g-0 justify-content-center w-100">
                 <div class="col-sm-3 p-2">
@@ -28,7 +27,7 @@
             </div>
         </div>
         <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-5">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,37 +64,38 @@
             </div>
           </nav>
 
-          <!-- Carousel -->
-          <div class="owl-carousel owl-carousel-header">
-            <div>
-              <div class="slider-item" style=" background-image: url(/src/images/teacher-kids.jpg);">
-                <div class="overlay"></div>
-                <div class="container">
-                  <div class="row g-0 slider-text justify-content-center align-items-center">
-                    <div class="col-md-9 text-center">
-                      <h1>Kids Are The Best <span>Exploring In The World</span></h1>
-                      <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
-                    </div> 
-                  </div>
-                </div>
+      <section>
+       <!-- Carousel -->
+       <div class="owl-carousel owl-carousel-header">
+        <div>
+          <div class="slider-item" style=" background-image: url(/src/images/teacher-kids.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row g-0 slider-text justify-content-center align-items-center">
+                <div class="col-md-9 text-center">
+                  <h1>Kids Are The Best <span>Exploring In The World</span></h1>
+                  <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
+                </div> 
               </div>
             </div>
-            <div>
-              <div class="slider-item" style="background-image: url(/src/images/kids-1093758_1920.jpg);">
-                <div class="overlay"></div>
-                <div class="container">
-                  <div class="row g-0 slider-text justify-content-center align-items-center">
-                    <div class="col-md-9 text-center">
-                      <h1>Perfect Learned <span>For Your Child</span></h1>
-                      <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
-                    </div> 
-                  </div>
-                </div>
-              </div>
-            </div>
-            
           </div>
-    </header>
+        </div>
+        <div>
+          <div class="slider-item" style="background-image: url(/src/images/kids-1093758_1920.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row g-0 slider-text justify-content-center align-items-center">
+                <div class="col-md-9 text-center">
+                  <h1>Perfect Learned <span>For Your Child</span></h1>
+                  <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
     <section class="services">
       <div class="row g-0 justify-content-center">
         <div class="col-md-3  d-flex align-self-stretch pb-4 px-4 bg-primary text-light">
@@ -675,12 +675,165 @@
                   <h3 class="blog-title">Skills To Develop Your Child Memory</h3>
                   <p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
-              <div class="d-flex">
+              <div class="d-flex justify-content-between align-items-center">
                 <p class="p-2"><a href="#" class="btn btn-secondary">Read More</a></p>
+                <div class="d-flex">
+                  <h6 id="uploader" class="p-2 text-info">Admin</h6>
+                  <p class="text-muted p-2"><i class="far fa-comment-dots"></i><span id="numberOfCommands">3</span></p>
+                </div>
               </div>
             </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="blog-img position-relative">
+                <img class="img-fluid" src="/src/images/kids-1093758_1920.jpg" alt="kids">
+                <div class="posted-date bg-fifth text-light text-center">
+                  <h3>27</h3>
+                  <p class="date-year">January</p>
+                  <p class="date-year">2021</p>
+                </div>
+              </div>
+              <div class="blog-content p-3">
+                  <h3 class="blog-title">Skills To Develop Your Child Memory</h3>
+                  <p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="p-2"><a href="#" class="btn btn-secondary">Read More</a></p>
+                <div class="d-flex">
+                  <h6 id="uploader" class="p-2 text-info">Admin</h6>
+                  <p class="text-muted p-2"><i class="far fa-comment-dots"></i><span id="numberOfCommands">3</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="blog-img position-relative">
+                <img class="img-fluid" src="/src/images/kids-1093758_1920.jpg" alt="kids">
+                <div class="posted-date bg-fifth text-light text-center">
+                  <h3>27</h3>
+                  <p class="date-year">January</p>
+                  <p class="date-year">2021</p>
+                </div>
+              </div>
+              <div class="blog-content p-3">
+                  <h3 class="blog-title">Skills To Develop Your Child Memory</h3>
+                  <p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="p-2"><a href="#" class="btn btn-secondary">Read More</a></p>
+                <div class="d-flex">
+                  <h6 id="uploader" class="p-2 text-info">Admin</h6>
+                  <p class="text-muted p-2"><i class="far fa-comment-dots"></i><span id="numberOfCommands">3</span></p>
+                </div>
+              </div>
+            </div>
+            
         </div>
       </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container-wrap">
+        <div class="row g-0">
+          <div class="col-md-3">
+            <a class="gallery" href="/src/images/kids-1093758_1920.jpg" target="_blank">
+              <img src="/src/images/kids-1093758_1920.jpg" alt="Kids">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a class="gallery" href="/src/images/teacher-kids.jpg" target="_blank">
+              <img src="/src/images/teacher-kids.jpg" alt="Kids">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a class="gallery" href="/src/images/kids-1093758_1920.jpg" target="_blank">
+              <img src="/src/images/kids-1093758_1920.jpg" alt="Kids">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a class="gallery"href="/src/images/teacher-kids.jpg" target="_blank">
+              <img src="/src/images/teacher-kids.jpg" alt="Kids">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section footer bg-dark">
+      <div class="container text-light">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Have a Questions?</h3>
+            <div class="d-flex align-items-center pt-4">
+              <p class="P-2 "><i class="fas fa-map-marker-alt"></i></p>
+              <P class="p-2 ps-4 text-footer text-muted">203 Fake St. Mountain View, San Francisco, California, USA</P>
+            </div>
+            
+            <div class="d-flex align-items-center">
+              <p class="P-2 "><i class="fas fa-phone"></i></p>
+              <P class="p-2 ps-4 text-footer text-muted">+2 392 3929 210</P>
+            </div>
+            <div class="d-flex align-items-center">
+              <p class="P-2 "><i class="far fa-envelope"></i></p>
+              <P class="p-2 ps-4 text-footer text-muted">info@yourdomain.com</P>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h3>Recent blog</h3>
+            <div class="blog-list pt-4">
+              <div class="d-flex ">
+                <img src="/src/images/kids-1093758_1920.jpg" alt="Kids" class="blog-img-profile">
+                <div class="p-2 ps-4">
+                  <p class="blog-title">Even the all-powerful Pointing has no control about</p>
+                  
+                </div>
+                
+              </div>
+              <div class="d-flex">
+                <p class="text-muted text-footer p-2"><i class="far fa-calendar-alt"></i> Dec 25, 2018</p>
+                <p class="text-muted text-footer p-2"><i class="fas fa-user"></i> Admin</p>
+                <p class="text-muted text-footer p-2"><i class="far fa-comment-dots"></i> 19</p>
+              </div>
+            </div>
+            <div class="blog-list pt-4">
+              <div class="d-flex ">
+                <img src="/src/images/kids-1093758_1920.jpg" alt="Kids" class="blog-img-profile">
+                <div class="p-2 ps-4">
+                  <p class="blog-title">Even the all-powerful Pointing has no control about</p>
+                  
+                </div>
+                
+              </div>
+              <div class="d-flex">
+                <p class="text-muted text-footer p-2"><i class="far fa-calendar-alt"></i> Dec 25, 2018</p>
+                <p class="text-muted text-footer p-2"><i class="fas fa-user"></i> Admin</p>
+                <p class="text-muted text-footer p-2"><i class="far fa-comment-dots"></i> 19</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-3">
+              <h3>Links</h3>
+              <p class="pt-4 quick-links"><a href="#"><i class="fas fa-caret-right"></i> Home</a></p>
+              <p class="quick-links"><a href="#"><i class="fas fa-caret-right"></i> About</a></p>
+              <p class="quick-links"><a href="#"><i class="fas fa-caret-right"></i> Services</a></p>
+              <p class="quick-links"><a href="#"><i class="fas fa-caret-right"></i> Department</a></p>
+              <p class="quick-links"><a href="#"><i class="fas fa-caret-right"></i> Contact</a></p>
+            </div>
+            <div class="col-md-3">
+              <h3>Subscribe Us!</h3>
+              <form action="" class="pt-4">
+                <input type="text" class="footer-input input-text m-2" placeholder="Enter email address">
+                <button class="footer-input btn-subscribe m-2">Subscribe</button>
+              </form>
+              <h3 class="pt-4">Connect With Us</h3>
+              <div class="d-flex social">
+                <h3 class="px-2 p-2 m-2 rounded-circle bg-grey"><a href="#"><i class="fab fa-twitter"></i></a></h3>
+                <h3 class="px-2 p-2 m-2 rounded-circle bg-grey"><a href="#"><i class="fab fa-facebook-square"></i></a></h2>
+                <h3 class="px-2 p-2 m-2 rounded-circle bg-grey"><a href="#"><i class="fab fa-instagram"></i></a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-muted mt-4">Copyright ©2021 All rights reserved | This template is made with by Colorlib recreated by vaitheeswaran</p>
     </section>
     
     <script src="/lib/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>

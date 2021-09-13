@@ -12,6 +12,10 @@ a{
 .z-index-1{
     z-index: 1;
 }
+.navbar-brand{
+    font-weight: 800;
+    font-size: 30px;
+}
 .mono-caps{
     font-family: 'Roboto Mono', monospace;
     text-transform: uppercase;
@@ -42,6 +46,9 @@ a{
 }
 .bg-quarternary{
     background-color: #ff5a5f;
+}
+.bg-grey{
+    background-color: #464646;
 }
 .round-icon{
     padding: 7px 9px;
@@ -258,4 +265,62 @@ a{
 .date-year{
     font-size: 12px;
     margin-bottom: 5px;
+}
+
+/* Gallery section */
+.gallery{
+    padding: 0;
+}
+.gallery img{
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+
+/* Footer section */
+.text-footer{
+    font-size: 12px;
+}
+.blog-img-profile{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+.blog-list .blog-title{
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.blog-list .blog-title:hover{
+    color: #4cc9f0;
+}
+.quick-links a{
+    color: white;
+    transition: all .2s ease;
+}
+.quick-links a:hover{
+    color: #6e6e6e;
+}
+.footer-input{
+    width: 100%;
+    height: 50px;
+}
+.footer-input.input-text{
+    color: #adb5bd;
+    background: #464646;
+    outline: none;
+    border: 0;
+    text-align: center;
+}
+.footer-input.btn-subscribe{
+    background-color: #A32EFF;
+    color: white;
+    border: 0;
+    outline: none;
+    transition: all .2s ease;
+}
+.footer-input.btn-subscribe:hover{
+    background-color: #4cc9f0;
+}
+.social a{
+    color: white;
 }

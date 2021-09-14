@@ -8,6 +8,7 @@ a{
     text-decoration:none ;
 }
 
+
 /* Common */
 .z-index-1{
     z-index: 1;
@@ -62,7 +63,7 @@ a{
     right: 0;
     left: 0;
     background-color: #000;
-    opacity: .2;
+    opacity: .5;
     z-index: 0;
 }
 /* Buttons */
@@ -77,6 +78,23 @@ a{
 .btn.btn-secondary:active{
     background-color: #6e6e6e;
     outline: none;
+}
+.btn-hover-outline-info{
+    background-color: #4cc9f0;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid #4cc9f0;
+    outline: none;
+}
+.btn-hover-outline-info:hover{
+    background-color: transparent;
+    border: 2px solid #4cc9f0;
+    color: #4cc9f0;
+}
+.btn-hover-outline-info:active{
+    background-color: #A32EFF;
+    border: 2px solid #A32EFF;
+    color: white;
 }
 /* owl carousel */
 .slider-item{
@@ -201,9 +219,7 @@ a{
     width: 250px;
     height: 250px;
 }
-.course .text{
-    /* width: calc(100% - 250px); */
-}
+
 
 /* Counter section */
 .counter{
@@ -431,3 +447,26 @@ a{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.text-muted a{
+    color: #6e6e6e;
+}
+/* banner section */
+.baner{
+    position: relative;
+    background-image: url(/src/images/teacher-kids.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+}
+.baner a{
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+    .baner{
+        background-position: 0;
+    }
+  }

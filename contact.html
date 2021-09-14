@@ -96,26 +96,32 @@
         </div>
       </section>
       <section class="section bg-fifth">
-        <form action="">
+        <form action="/src/php/sendmail.php" method="POST" enctype="multipart/form-data">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-5 mb-3">
-                        <input class="form-control" id="name" type="text" placeholder="Your Name">
+                <div class="row justify-content-between">
+                    <div class="col-md-5">
+                        <img class="img-fluid" src="/src/images/computer.png" alt="Computer">
                     </div>
-                    <div class="col-md-5 mb-3">
-                        <input class="form-control" id="email" type="email" placeholder="Your Email">
-                    </div>
-                    <div class="col-md-5 mb-3">
-                        <input class="form-control" id="subject" type="text" placeholder="Subject">
-                    </div>
-                    <div class="col-md-5 mb-3">
-                        <textarea name="message" id="message" class="form-control" placeholder="Message" style="resize: none;"></textarea>
-                    </div>
-                    <div class="row justify-content-center text-end">
-                        <div class="col-md-10">
-                            <button class="btn-hover-outline-info px-5 py-3">Send Message</button>
+                    <div class="col-md-5">
+                        <div class=" mb-3">
+                            <input class="form-control form-control-lg" name="name" id="name" type="text" placeholder="Your Name" required>
                         </div>
+                        <div class="mb-3">
+                            <input class="form-control form-control-lg" name="email" id="email" type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control form-control-lg" name="subject" id="subject" type="text" placeholder="Subject" required>
+                        </div>
+                        <div class=" mb-3">
+                            <textarea name="msg" id="message" class="form-control form-control-lg" placeholder="Message" style="resize: none;" required></textarea>
+                        </div>
+                        <div class="row justify-content-end text-end">
+                            <div class="col-md-8">
+                                <button class="btn-hover-outline-info px-5 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>                      
                     </div>
+                    
                 </div>
             </div>
         </form>

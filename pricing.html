@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="/src/css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="/lib/fontawesome-free-5.15.4-web/css/all.css">
-    <title>About</title>
+    <link rel="shortcut icon" href="/src/fav/programming-code-signs.png" type="image/x-icon">
+    <title>Website</title>
 </head>
 <body>
     <div class="header bg-info p-2 text-light text-center">
@@ -30,7 +31,7 @@
     <!-- Navigation bar -->
     <nav id="nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-5">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"><img src="/src/fav/programming-code-signs.png" alt="Logo" width="50" height="50"> Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -66,7 +67,7 @@
       </nav>
       <section class="section baner">
           <div class="overlay"></div>
-        <div class="container text-center text-light position-relative z-index-1">
+        <div class="container text-center text-light position-relative z-index-1 fadeInUp invisible">
             <h1>Pricing</h1>
             <p><span class="me-2"><a href="/index.html">HOME <i class="fas fa-chevron-right"></i></a></span>
             <span>PRICING <i class="fas fa-chevron-right"></i></span>
@@ -76,14 +77,14 @@
       <section class="section">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-md-8 text-center text-light">
+            <div class="col-md-8 text-center text-light fadeInUp invisible">
               <h1 class="mb-4"><span class="text-fifth">Our</span> <span class="text-orange">Pricing</span></h1>
               <p class="text-muted">Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
             </div>
           </div>
   
           <div class="row mt-5">
-            <div class="col-md-6 col-lg-3 text-center py-4">
+            <div class="col-md-6 col-lg-3 text-center py-4 fadeInUp invisible">
               <h3>Basic</h3>
               <p><span class="price">$24.50</span><span class="validity text-muted">/mons</span></p>
               <div class="img my-4">
@@ -94,7 +95,7 @@
               </p>
               <button class="btn btn-success rounded-pill px-4 py-3">Take a Course</button>
             </div>
-            <div class="col-md-6 col-lg-3 text-center py-4">
+            <div class="col-md-6 col-lg-3 text-center py-4 fadeInUp invisible animation-delay1">
               <h3>Basic</h3>
               <p><span class="price">$24.50</span><span class="validity text-muted">/mons</span></p>
               <div class="img my-4">
@@ -105,7 +106,7 @@
               </p>
               <button class="btn btn-secondary rounded-pill px-4 py-3">Take a Course</button>
             </div>
-            <div class="col-md-6 col-lg-3 text-center py-4">
+            <div class="col-md-6 col-lg-3 text-center py-4 fadeInUp invisible animation-delay2">
               <h3>Basic</h3>
               <p><span class="price">$24.50</span><span class="validity text-muted">/mons</span></p>
               <div class="img my-4">
@@ -116,7 +117,7 @@
               </p>
               <button class="btn btn-primary rounded-pill px-4 py-3">Take a Course</button>
             </div>
-            <div class="col-md-6 col-lg-3 text-center py-4">
+            <div class="col-md-6 col-lg-3 text-center py-4 fadeInUp invisible animation-delay3">
               <h3>Basic</h3>
               <p><span class="price">$24.50</span><span class="validity text-muted">/mons</span></p>
               <div class="img my-4">
@@ -198,9 +199,9 @@
                 </form>
                 <h3 class="pt-4">Connect With Us</h3>
                 <div class="d-flex social-icon">
-                  <a class="m-2" href="#"><i class="fab fa-twitter"></i></a>
-                  <a class="m-2" href="#"><i class="fab fa-facebook-square"></i></a>
-                  <a class="m-2" href="#"><i class="fab fa-instagram"></i></a>
+                  <a class="m-2 fadeInUp invisible" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="m-2 fadeInUp invisible animation-delay1" href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a class="m-2 fadeInUp invisible animation-delay2" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
@@ -213,5 +214,7 @@
     <script src="/lib/js/jquery-3.6.0.min.js"></script>
     <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script src="/src/js/app.js"></script>
+    <script src="/lib/js/jquery.viewportchecker.js"></script>
+    <script src="/src/js/scrollanim.js"></script>
 </body>
 </html>

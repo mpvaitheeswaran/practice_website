@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="/src/css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="/lib/fontawesome-free-5.15.4-web/css/all.css">
-    <title>About</title>
+    <link rel="shortcut icon" href="/src/fav/programming-code-signs.png" type="image/x-icon">
+    <title>Website</title>
 </head>
 <body>
     <div class="header bg-info p-2 text-light text-center">
@@ -30,7 +31,7 @@
     <!-- Navigation bar -->
     <nav id="nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-5">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"><img src="/src/fav/programming-code-signs.png" alt="Logo" width="50" height="50"> Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -66,7 +67,7 @@
       </nav>
       <section class="section baner">
           <div class="overlay"></div>
-        <div class="container text-center text-light position-relative z-index-1">
+        <div class="container text-center text-light position-relative z-index-1 fadeInUp invisible">
             <h1>Contact</h1>
             <p><span class="me-2"><a href="/index.html">HOME <i class="fas fa-chevron-right"></i></a></span>
             <span>CONTACT <i class="fas fa-chevron-right"></i></span>
@@ -76,55 +77,59 @@
       <section class="section">
         <div class="container text-center">
             <div class="row w-100 justify-content-center">
-                <div class="col-md-3">
+                <div class="col-md-3 fadeInUp invisible">
                     <h3>Address</h3>
                     <p class="text-muted">198 West 21th Street, Suite 721 New York NY 10016</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 fadeInUp invisible animation-delay1">
                     <h3>Contact Number</h3>
                     <p class="text-muted"><a href="tel://1234567890">+ 1234567890</a></p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 fadeInUp invisible animation-delay2">
                     <h3>Email Address</h3>
                     <p class="text-muted"><a href="#">name@website.com</a></p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 fadeInUp invisible animation-delay3">
                     <h3>Website</h3>
                     <p class="text-muted"><a href="#">www.website.com</a></p>
                 </div>
             </div>
         </div>
       </section>
-      <section class="section bg-fifth">
-        <form action="/src/php/sendmail.php" method="POST" enctype="multipart/form-data">
+      <section class="section bg-light" >
+        
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-md-5">
+                    <div class="col-md-5 fadeInLeft invisible">
                         <img class="img-fluid" src="/src/images/computer.png" alt="Computer">
                     </div>
-                    <div class="col-md-5">
-                        <div class=" mb-3">
+                    <div class="col-md-6">
+                      <div id="status" class="w-100 bg-success text-light text-center p-2 my-auto d-none fadeInUp invisible">
+                        <h3>Message sent!</h3>
+                      </div>
+                      <form class="" action="/src/php/sendmail.php" method="POST" enctype="multipart/form-data" id="msgForm">
+                        <div class=" mb-4 fadeInUp invisible">
                             <input class="form-control form-control-lg" name="name" id="name" type="text" placeholder="Your Name" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-4 fadeInUp invisible">
                             <input class="form-control form-control-lg" name="email" id="email" type="email" placeholder="Your Email" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-4 fadeInUp invisible">
                             <input class="form-control form-control-lg" name="subject" id="subject" type="text" placeholder="Subject" required>
                         </div>
-                        <div class=" mb-3">
-                            <textarea name="msg" id="message" class="form-control form-control-lg" placeholder="Message" style="resize: none;" required></textarea>
+                        <div class=" mb-4 fadeInUp invisible">
+                            <textarea name="msg" id="msg" class="form-control form-control-lg" placeholder="Message" style="resize: none;" required></textarea>
                         </div>
                         <div class="row justify-content-end text-end">
-                            <div class="col-md-8">
-                                <button class="btn-hover-outline-info px-5 py-3" type="submit">Send Message</button>
+                            <div class="col-md-8 fadeInUp invisible">
+                                <button id="sendBtn" class="btn btn-success rounded px-5 py-3" type="submit" >Send Message</button>
                             </div>
-                        </div>                      
+                        </div> 
+                      </form>                     
                     </div>
                     
                 </div>
             </div>
-        </form>
       </section>
       <section class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d696.6831428118161!2d77.30347645563535!3d8.968922376936709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0429c3fd0008df%3A0x70e0ad37c40dd2c8!2sBuyp%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1631600421449!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -197,9 +202,9 @@
                 </form>
                 <h3 class="pt-4">Connect With Us</h3>
                 <div class="d-flex social-icon">
-                  <a class="m-2" href="#"><i class="fab fa-twitter"></i></a>
-                  <a class="m-2" href="#"><i class="fab fa-facebook-square"></i></a>
-                  <a class="m-2" href="#"><i class="fab fa-instagram"></i></a>
+                  <a class="m-2 fadeInUp invisible" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="m-2 fadeInUp invisible animation-delay1" href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a class="m-2 fadeInUp invisible animation-delay2" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
@@ -212,5 +217,34 @@
     <script src="/lib/js/jquery-3.6.0.min.js"></script>
     <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script src="/src/js/app.js"></script>
+    <script src="/lib/js/jquery.viewportchecker.js"></script>
+    <script src="/src/js/scrollanim.js"></script>
+    <script>
+      // For sending a mail
+      var form = document.getElementById('msgForm');
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+        $('#sendBtn').prop('disabled', true);
+        var formData = {
+          name: $("#name").val(),
+          email: $("#email").val(),
+          subject: $("#subject").val(),
+          msg : $("#msg").val()
+        };
+
+        $.ajax({
+          type: "POST",
+          url: "/src/php/sendmail.php",
+          data: formData,
+          // dataType: "json",
+          // encode: true,
+        }).done(function (data) {
+            $('#msgForm').addClass('d-none');
+            $('#status').removeClass('d-none');
+        }).fail(function (data){
+          console.log("Faild");
+        });
+      })
+    </script>
 </body>
 </html>

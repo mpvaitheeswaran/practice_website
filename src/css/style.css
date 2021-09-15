@@ -10,6 +10,9 @@ a{
 
 
 /* Common */
+.invisible{
+    opacity: 0;
+}
 .z-index-1{
     z-index: 1;
 }
@@ -461,7 +464,27 @@ a{
 .baner a{
     color: white;
 }
-
+/* For animation */
+.animation-delay1{
+    --animate-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+.animation-delay2{
+    --animate-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.animation-delay3{
+    --animate-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.animation-delay4{
+    --animate-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.animation-delay5{
+    --animate-delay: 0.5s;
+    animation-delay: 0.5s;
+}
 @media only screen and (max-width: 600px) {
     body{
         overflow-x: hidden;

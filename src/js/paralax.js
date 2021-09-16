@@ -5,12 +5,11 @@ $(document).ready(function() {
     $('.parallax-img').each(function() {
       var $bgobj = $(this); // assigning the object
       $(window).scroll(function() {
-        var yPos = -($window.scrollTop() / 10);
-        // Put together the final background position (bgp)
+        // Y position fo background image 
+        var yPos =  ($(window).scrollTop() - $bgobj.position().top) *0.2;
         var bgp = '50% ' + yPos + 'px';
         // Move the background
         $bgobj.css("background-position", bgp);
-        console.log($bgobj.data('speed'))
       });
     });
     });

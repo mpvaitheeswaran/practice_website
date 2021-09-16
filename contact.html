@@ -104,7 +104,7 @@
                         <img class="img-fluid" src="/src/images/computer.png" alt="Computer">
                     </div>
                     <div class="col-md-6">
-                      <div id="status" class="w-100 bg-success text-light text-center p-2 my-auto d-none fadeInUp invisible">
+                      <div id="status" class="w-100 bg-success text-light text-center p-2 my-auto d-none animate__animated animate__fadeInUp animate__fast">
                         <h3>Message sent!</h3>
                       </div>
                       <form class="" action="/src/php/sendmail.php" method="POST" enctype="multipart/form-data" id="msgForm">
@@ -242,7 +242,7 @@
             $('#msgForm').addClass('d-none');
             $('#status').removeClass('d-none');
         }).fail(function (data){
-          console.log("Faild");
+          console.log("Mail sent Faild");
         });
       })
     </script>
